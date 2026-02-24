@@ -47,4 +47,9 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  # Dotenv-Rails is a gem that loads environment variables from a `.env` file into the Rails application.
+  # This is useful for managing configuration settings, API keys, and secrets in development and
+  # test environments, keeping them out of version control and facilitating easier configuration management.
+  gem 'dotenv-rails', '~> 3.2'
 end
