@@ -35,6 +35,12 @@ gem "image_processing", "~> 1.2"
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
 # gem "rack-cors"
 
+group :development do
+  # Code formatter for Ruby. It enforces the Ruby style guide, detects potential code issues.
+  # Useful for maintaining consistent code quality and style across the project.
+  gem "rubocop", require: false
+end
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
@@ -51,21 +57,21 @@ group :development, :test do
   # Dotenv-Rails is a gem that loads environment variables from a `.env` file into the Rails application.
   # This is useful for managing configuration settings, API keys, and secrets in development and
   # test environments, keeping them out of version control and facilitating easier configuration management.
-  gem 'dotenv-rails', '~> 3.2'
+  gem "dotenv-rails", "~> 3.2"
 
   # RSpec-Rails integrates RSpec, a popular testing framework, with Rails applications.
   # It provides a suite of tools and helpers for writing and running unit, integration, and
   # system tests, allowing for a behavior-driven development (BDD) approach to testing and ensuring robust and
   # maintainable code.
-  gem 'rspec-rails', '~> 8.0', '>= 8.0.3'
+  gem "rspec-rails", "~> 8.0", ">= 8.0.3"
 
   # FactoryBot is a fixtures replacement tool that allows you to create test data more easily and flexibly.
   # The 'factory_bot_rails' gem integrates FactoryBot with Rails, enabling you to define and
   # use factories in your tests to generate objects with default or custom attributes.
-  gem 'factory_bot_rails', '~> 6.5', '>= 6.5.1'
+  gem "factory_bot_rails", "~> 6.5", ">= 6.5.1"
 
   # Faker is a library for generating fake data, useful for populating test databases or creating realistic sample data.
   # It provides a wide range of methods to generate random names, addresses, phone numbers, and
   # other types of data, which helps in creating more comprehensive and diverse test cases.
-  gem 'faker', '~> 3.6'
+  gem "faker", "~> 3.6"
 end
