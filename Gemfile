@@ -52,4 +52,20 @@ group :development, :test do
   # This is useful for managing configuration settings, API keys, and secrets in development and
   # test environments, keeping them out of version control and facilitating easier configuration management.
   gem 'dotenv-rails', '~> 3.2'
+
+  # RSpec-Rails integrates RSpec, a popular testing framework, with Rails applications.
+  # It provides a suite of tools and helpers for writing and running unit, integration, and
+  # system tests, allowing for a behavior-driven development (BDD) approach to testing and ensuring robust and
+  # maintainable code.
+  gem 'rspec-rails', '~> 8.0', '>= 8.0.3'
+
+  # FactoryBot is a fixtures replacement tool that allows you to create test data more easily and flexibly.
+  # The 'factory_bot_rails' gem integrates FactoryBot with Rails, enabling you to define and
+  # use factories in your tests to generate objects with default or custom attributes.
+  gem 'factory_bot_rails', '~> 6.5', '>= 6.5.1'
+
+  # Faker is a library for generating fake data, useful for populating test databases or creating realistic sample data.
+  # It provides a wide range of methods to generate random names, addresses, phone numbers, and
+  # other types of data, which helps in creating more comprehensive and diverse test cases.
+  gem 'faker', '~> 3.6'
 end
