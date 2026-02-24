@@ -33,7 +33,7 @@ gem "thruster", require: false
 gem "image_processing", "~> 1.2"
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
-# gem "rack-cors"
+gem 'rack-cors', '~> 3.0'
 
 group :development do
   # Code formatter for Ruby. It enforces the Ruby style guide, detects potential code issues.
