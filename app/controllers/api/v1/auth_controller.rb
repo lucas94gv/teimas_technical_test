@@ -26,23 +26,13 @@ module Api::V1
 
     # GET /profile
     def profile
-      render json: @current_user
+      render json: current_user
     end
 
     private
 
     def user_params
       params.permit(:name, :email, :password, :password_confirmation)
-    end
-
-    def authorize_request
-      header = request.headers["Authorization"]&.split(" ")&.last
-      decoded = JsonWebToken.decode(header)
-      @current_user = User.find(decoded[:user_id]) if decoded
-    rescue ActiveRecord::RecordNotFound
-      render json: { errors: [ "User not found" ] }, status: :unauthorized
-    rescue JWT::DecodeError, JWT::VerificationError
-      render json: { errors: [ "Invalid or expired token" ] }, status: :unauthorized
     end
   end
 end
