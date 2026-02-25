@@ -39,6 +39,12 @@ gem "jwt", "~> 3.1", ">= 3.1.2"
 
 gem 'fast_jsonapi', '~> 1.5'
 
+gem 'faraday', '~> 2.14', '>= 2.14.1'
+
+group :test do
+  gem 'webmock', '~> 3.26', '>= 3.26.1'
+end
+
 group :development do
   # Code formatter for Ruby. It enforces the Ruby style guide, detects potential code issues.
   # Useful for maintaining consistent code quality and style across the project.
