@@ -10,6 +10,13 @@ Rails.application.routes.draw do
       post "register", to: "auth#register"
       post "login", to: "auth#login"
       get "profile", to: "auth#profile"
+
+      get 'teams/search', to: 'teams#search'
+      post 'teams/select', to: 'teams#select'
+      delete 'teams/deselect', to: 'teams#deselect'
+      get 'teams', to: 'teams#index'
+
+      get 'fixtures', to: 'fixtures#index'
     end
   end
 
