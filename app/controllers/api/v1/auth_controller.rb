@@ -8,8 +8,10 @@ module Api::V1
 
       if user.save
         token = JsonWebToken.encode(user_id: user.id)
-        serialized_user = UserSerializer.new(user).serialized_json
-        render_success({ token: token, user: JSON.parse(serialized_user) }, :created)
+        render_success({
+                         token: token,
+                         user: UserSerializer.new(user).serializable_hash[:data][:attributes]
+                       }, :created)
       else
         render_error(user.errors.full_messages)
       end
@@ -21,8 +23,10 @@ module Api::V1
 
       if user&.authenticate(params[:password])
         token = JsonWebToken.encode(user_id: user.id)
-        serialized_user = UserSerializer.new(user).serialized_json
-        render_success({ token: token, user: JSON.parse(serialized_user) })
+        render_success({
+                         token: token,
+                         user: UserSerializer.new(user).serializable_hash[:data][:attributes]
+                       })
       else
         render_error("Invalid credentials", :unauthorized)
       end
@@ -30,8 +34,10 @@ module Api::V1
 
     # GET /profile
     def profile
-      serialized_user = UserSerializer.new(current_user).serialized_json
-      render_success(JSON.parse(serialized_user))
+      user_hash = UserSerializer.new(current_user).serializable_hash[:data]
+      render_success(
+        user_hash[:attributes].merge(id: user_hash[:id])
+      )
     end
 
     private
