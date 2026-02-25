@@ -24,6 +24,6 @@ class ApplicationController < ActionController::API
     return render_error("Unauthorized", :unauthorized) unless decoded
 
     @current_user = User.find_by(id: decoded[:user_id])
-    return render_error("Unauthorized", :unauthorized) unless @current_user
+    render_error("Unauthorized", :unauthorized) unless @current_user
   end
 end
