@@ -3,17 +3,27 @@ class ApplicationController < ActionController::API
 
   private
 
+  def render_success(data = {}, status = :ok)
+    render json: {
+      success: true,
+      data: data
+    }, status: status
+  end
+
+  def render_error(errors = [], status = :unprocessable_entity)
+    render json: {
+      success: false,
+      errors: Array(errors)
+    }, status: status
+  end
+
   def authorize_request
     header = request.headers["Authorization"]&.split(" ")&.last
     decoded = JsonWebToken.decode(header)
 
-    return render_unauthorized unless decoded
+    return render_error("Unauthorized", :unauthorized) unless decoded
 
     @current_user = User.find_by(id: decoded[:user_id])
-    return render_unauthorized unless @current_user
-  end
-
-  def render_unauthorized
-    render json: { errors: ["Unauthorized"] }, status: :unauthorized
+    return render_error("Unauthorized", :unauthorized) unless @current_user
   end
 end

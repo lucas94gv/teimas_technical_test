@@ -7,9 +7,9 @@ module Api::V1
       user = User.new(user_params)
       if user.save
         token = JsonWebToken.encode(user_id: user.id)
-        render json: { token: token, user: user.as_json(except: [ :password_digest ]) }, status: :created
+        render_success({ token: token, user: user }, :created)
       else
-        render json: { errors: user.errors.full_messages }, status: :unprocessable_entity
+        render_error(user.errors.full_messages)
       end
     end
 
@@ -18,15 +18,15 @@ module Api::V1
       user = User.find_by(email: params[:email])
       if user&.authenticate(params[:password])
         token = JsonWebToken.encode(user_id: user.id)
-        render json: { token: token, user: user.as_json(except: [ :password_digest ]) }, status: :ok
+        render_success({ token: token, user: user })
       else
-        render json: { errors: [ "Invalid credentials" ] }, status: :unauthorized
+        render_error("Invalid credentials", :unauthorized)
       end
     end
 
     # GET /profile
     def profile
-      render json: current_user
+      render_success(current_user)
     end
 
     private
