@@ -60,7 +60,14 @@ module Api::V1
 
       teams_data = team_ids.map do |id|
         response = ApiFootballService.team_info(id)
-        response[0] if response.any?
+        next unless response.any?
+        team = response[0]["team"]
+        {
+          id: team["id"],
+          name: team["name"],
+          logo: team["logo"],
+          country: { name: team["country"] }
+        }
       end.compact
 
       render json: { success: true, data: teams_data }

@@ -1,0 +1,205 @@
+{
+  "success": true,
+  "data": [
+    {
+      "team": {
+        "id": 529,
+        "name": "Barcelona",
+        "code": "BAR",
+        "country": "Spain",
+        "founded": 1899,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/529.png"
+      },
+      "venue": {
+        "id": 19939,
+        "name": "Camp Nou",
+        "address": "Les Corts, 08028",
+        "city": "Barcelona",
+        "capacity": 99354,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/19939.png"
+      }
+    },
+    {
+      "team": {
+        "id": 541,
+        "name": "Real Madrid",
+        "code": "RMA",
+        "country": "Spain",
+        "founded": 1902,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/541.png"
+      },
+      "venue": {
+        "id": 19938,
+        "name": "Santiago Bernabéu",
+        "address": "Av. de Concha Espina 1",
+        "city": "Madrid",
+        "capacity": 81044,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/19938.png"
+      }
+    },
+    {
+      "team": {
+        "id": 530,
+        "name": "Atlético Madrid",
+        "code": "ATM",
+        "country": "Spain",
+        "founded": 1903,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/530.png"
+      },
+      "venue": {
+        "id": 19230,
+        "name": "Cívitas Metropolitano",
+        "address": "Av. de Luis Aragonés 4",
+        "city": "Madrid",
+        "capacity": 70460,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/19230.png"
+      }
+    },
+    {
+      "team": {
+        "id": 533,
+        "name": "Villarreal",
+        "code": "VIL",
+        "country": "Spain",
+        "founded": 1923,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/533.png"
+      },
+      "venue": {
+        "id": 20131,
+        "name": "Estadio de la Cerámica",
+        "address": "Calle Blasco Ibáñez 2",
+        "city": "Villarreal",
+        "capacity": 23500,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20131.png"
+      }
+    },
+    {
+      "team": {
+        "id": 532,
+        "name": "Valencia",
+        "code": "VAL",
+        "country": "Spain",
+        "founded": 1919,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/532.png"
+      },
+      "venue": {
+        "id": 20132,
+        "name": "Mestalla",
+        "address": "Av. de Suecia s/n",
+        "city": "Valencia",
+        "capacity": 49430,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20132.png"
+      }
+    },
+    {
+      "team": {
+        "id": 536,
+        "name": "Sevilla",
+        "code": "SEV",
+        "country": "Spain",
+        "founded": 1890,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/536.png"
+      },
+      "venue": {
+        "id": 20133,
+        "name": "Ramón Sánchez-Pizjuán",
+        "address": "Calle Sevilla FC s/n",
+        "city": "Sevilla",
+        "capacity": 43883,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20133.png"
+      }
+    },
+    {
+      "team": {
+        "id": 543,
+        "name": "Real Betis",
+        "code": "BET",
+        "country": "Spain",
+        "founded": 1907,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/543.png"
+      },
+      "venue": {
+        "id": 20134,
+        "name": "Benito Villamarín",
+        "address": "Av. de Heliópolis s/n",
+        "city": "Sevilla",
+        "capacity": 60721,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20134.png"
+      }
+    },
+    {
+      "team": {
+        "id": 548,
+        "name": "Real Sociedad",
+        "code": "RSO",
+        "country": "Spain",
+        "founded": 1909,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/548.png"
+      },
+      "venue": {
+        "id": 20135,
+        "name": "Reale Arena",
+        "address": "Paseo de Anoeta 1",
+        "city": "San Sebastián",
+        "capacity": 39500,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20135.png"
+      }
+    },
+    {
+      "team": {
+        "id": 797,
+        "name": "Girona",
+        "code": "GIR",
+        "country": "Spain",
+        "founded": 1930,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/797.png"
+      },
+      "venue": {
+        "id": 20136,
+        "name": "Estadi Montilivi",
+        "address": "Carrer Universitat de Girona 4",
+        "city": "Girona",
+        "capacity": 14286,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20136.png"
+      }
+    },
+    {
+      "team": {
+        "id": 546,
+        "name": "Getafe",
+        "code": "GET",
+        "country": "Spain",
+        "founded": 1983,
+        "national": false,
+        "logo": "https://media.api-sports.io/football/teams/546.png"
+      },
+      "venue": {
+        "id": 20137,
+        "name": "Coliseum",
+        "address": "Av. Teresa de Calcuta s/n",
+        "city": "Getafe",
+        "capacity": 17393,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20137.png"
+      }
+    }
+  ]
+}
