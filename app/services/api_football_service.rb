@@ -16,9 +16,9 @@ class ApiFootballService
       get("fixtures", { team: team_id }.merge(options))
     end
 
-    def venue_info(venue_id)
-      get("venues", { id: venue_id })
-    end
+    # def venue_info(venue_id)
+    #   get("venues", { id: venue_id })
+    # end
 
     private
 
@@ -79,7 +79,6 @@ class ApiFootballService
         else
           []
         end
-
       else
         []
       end

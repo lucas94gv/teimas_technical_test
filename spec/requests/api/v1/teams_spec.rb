@@ -75,10 +75,8 @@ RSpec.describe "Teams API", type: :request do
               "team": {
                 "id" => 529,
                 "name" => "Barcelona",
-                "country" => "Spain"
-              },
-              "venue": {
-                "name" => "Camp Nou"
+                "country" => "Spain",
+                "logo" => "https://..."
               }
             }
           ]
@@ -90,7 +88,7 @@ RSpec.describe "Teams API", type: :request do
     body = JSON.parse(response.body)
     expect(body["success"]).to eq(true)
     expect(body["data"].length).to eq(1)
-    expect(body["data"].first["team"]["id"]).to eq(529)
-    expect(body["data"].first["team"]["name"]).to eq("Barcelona")
+    expect(body["data"].first["id"]).to eq(529)
+    expect(body["data"].first["name"]).to eq("Barcelona")
   end
 end

@@ -11,14 +11,16 @@ RSpec.describe "Fixtures API", type: :request do
 
   describe 'GET /api/v1/fixtures' do
     it 'devuelve los próximos partidos de los equipos favoritos' do
-      stub_request(:get, /fixtures/).to_return(
-        status: 200,
-        body: { "response": [
-          { "fixture": { "id" => 10, "date" => "2026-03-01T18:00:00+00:00" }, "teams" => { "home" => { "name" => "Barcelona" }, "away" => { "name" => "Real Madrid" } }, "league" => { "name" => "La Liga" } }
-        ] }.to_json
-      )
+      allow(ApiFootballService).to receive(:team_fixtures).and_return([
+                                                                        {
+                                                                          "fixture" => { "id" => 10, "date" => "2026-03-01T18:00:00+00:00" },
+                                                                          "teams" => { "home" => { "name" => "Barcelona" }, "away" => { "name" => "Real Madrid" } },
+                                                                          "league" => { "name" => "La Liga" }
+                                                                        }
+                                                                      ])
 
       get '/api/v1/fixtures', headers: @headers
+
       expect(response).to have_http_status(:ok)
       body = JSON.parse(response.body)
       expect(body["success"]).to eq(true)
