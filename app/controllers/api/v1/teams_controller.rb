@@ -49,5 +49,21 @@ module Api::V1
     def index
       render_success(current_user.user_teams)
     end
+
+    def favorites
+      team_ids = current_user.user_teams.pluck(:team_id)
+
+      if team_ids.empty?
+        render json: { success: true, data: [] }
+        return
+      end
+
+      teams_data = team_ids.map do |id|
+        response = ApiFootballService.team_info(id)
+        response[0] if response.any?
+      end.compact
+
+      render json: { success: true, data: teams_data }
+    end
   end
 end

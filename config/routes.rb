@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       post 'teams/select', to: 'teams#select'
       delete 'teams/deselect', to: 'teams#deselect'
       get 'teams', to: 'teams#index'
+      get "favorites", to: "teams#favorites"
 
       get 'fixtures', to: 'fixtures#index'
     end

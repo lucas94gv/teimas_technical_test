@@ -52,4 +52,45 @@ RSpec.describe "Teams API", type: :request do
       expect(body["data"].first["team_id"]).to eq(1)
     end
   end
+
+  it 'devuelve array vacío si no tiene favoritos' do
+    get '/api/v1/favorites', headers: @headers
+
+    expect(response).to have_http_status(:ok)
+    body = JSON.parse(response.body)
+
+    expect(body["success"]).to eq(true)
+    expect(body["data"]).to eq([])
+  end
+
+  it 'devuelve los equipos favoritos con información completa' do
+    FactoryBot.create(:user_team, user: @user, team_id: 529)
+
+    stub_request(:get, /teams/)
+      .to_return(
+        status: 200,
+        body: {
+          "response": [
+            {
+              "team": {
+                "id" => 529,
+                "name" => "Barcelona",
+                "country" => "Spain"
+              },
+              "venue": {
+                "name" => "Camp Nou"
+              }
+            }
+          ]
+        }.to_json
+      )
+
+    get '/api/v1/favorites', headers: @headers
+    expect(response).to have_http_status(:ok)
+    body = JSON.parse(response.body)
+    expect(body["success"]).to eq(true)
+    expect(body["data"].length).to eq(1)
+    expect(body["data"].first["team"]["id"]).to eq(529)
+    expect(body["data"].first["team"]["name"]).to eq("Barcelona")
+  end
 end
