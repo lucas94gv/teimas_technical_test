@@ -4,32 +4,32 @@
     {
       "fixture": {
         "id": 2001,
-        "referee": "Mateu Lahoz",
+        "referee": "Carlos Velasco Carballo",
         "timezone": "Europe/Madrid",
-        "date": "2024-08-18T20:00:00+00:00",
-        "timestamp": 1724011200,
-        "periods": { "first": 1724011200, "second": 1724014800 },
-        "venue": { "id": 19939, "name": "Camp Nou", "city": "Barcelona" },
-        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90, "extra": null }
+        "date": "2024-03-01T20:00:00+01:00",
+        "timestamp": 1709253600,
+        "periods": { "first": 1709253600, "second": 1709257200 },
+        "venue": { "id": 1, "name": "Camp Nou", "city": "Barcelona" },
+        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
-        "id": 140,
+        "id": 100,
         "name": "La Liga",
         "country": "Spain",
-        "logo": "https://media.api-sports.io/football/leagues/140.png",
+        "logo": "https://media.api-sports.io/football/leagues/100.png",
         "flag": "https://media.api-sports.io/flags/es.svg",
         "season": 2024,
-        "round": "Regular Season - 1",
+        "round": "Matchday 25",
         "standings": true
       },
       "teams": {
         "home": { "id": 529, "name": "Barcelona", "logo": "https://media.api-sports.io/football/teams/529.png", "winner": true },
-        "away": { "id": 541, "name": "Real Madrid", "logo": "https://media.api-sports.io/football/teams/541.png", "winner": false }
+        "away": { "id": 541, "name": "Real Madrid", "logo": "https://media.api-sports.io/football/teams/530.png", "winner": false }
       },
-      "goals": { "home": 2, "away": 1 },
+      "goals": { "home": 3, "away": 1 },
       "score": {
-        "halftime": { "home": 1, "away": 1 },
-        "fulltime": { "home": 2, "away": 1 },
+        "halftime": { "home": 2, "away": 0 },
+        "fulltime": { "home": 3, "away": 1 },
         "extratime": { "home": null, "away": null },
         "penalty": { "home": null, "away": null }
       }
@@ -37,51 +37,27 @@
     {
       "fixture": {
         "id": 2002,
-        "referee": "Soto Grado",
+        "referee": "Antonio Mateu Lahoz",
         "timezone": "Europe/Madrid",
-        "date": "2024-08-19T18:00:00+00:00",
-        "timestamp": 1724090400,
-        "periods": { "first": 1724090400, "second": 1724094000 },
-        "venue": { "id": 19230, "name": "Cívitas Metropolitano", "city": "Madrid" },
-        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90, "extra": null }
+        "date": "2024-03-02T18:30:00+01:00",
+        "timestamp": 1709339400,
+        "periods": { "first": 1709339400, "second": 1709343000 },
+        "venue": { "id": 2, "name": "Santiago Bernabéu", "city": "Madrid" },
+        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
       "league": {
-        "id": 140,
+        "id": 100,
         "name": "La Liga",
         "country": "Spain",
-        "logo": "https://media.api-sports.io/football/leagues/140.png",
+        "logo": "https://media.api-sports.io/football/leagues/100.png",
         "flag": "https://media.api-sports.io/flags/es.svg",
         "season": 2024,
-        "round": "Regular Season - 1",
+        "round": "Matchday 25",
         "standings": true
       },
       "teams": {
-        "home": { "id": 530, "name": "Atlético Madrid", "logo": "https://media.api-sports.io/football/teams/530.png", "winner": true },
-        "away": { "id": 533, "name": "Villarreal", "logo": "https://media.api-sports.io/football/teams/533.png", "winner": false }
-      },
-      "goals": { "home": 3, "away": 0 },
-      "score": {
-        "halftime": { "home": 2, "away": 0 },
-        "fulltime": { "home": 3, "away": 0 },
-        "extratime": { "home": null, "away": null },
-        "penalty": { "home": null, "away": null }
-      }
-    },
-    {
-      "fixture": {
-        "id": 2003,
-        "referee": "Hernández Hernández",
-        "timezone": "Europe/Madrid",
-        "date": "2024-08-24T19:00:00+00:00",
-        "timestamp": 1724526000,
-        "periods": { "first": 1724526000, "second": 1724529600 },
-        "venue": { "id": 20132, "name": "Mestalla", "city": "Valencia" },
-        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90, "extra": null }
-      },
-      "league": { "id": 140, "name": "La Liga", "country": "Spain", "logo": "", "flag": "", "season": 2024, "round": "Regular Season - 2", "standings": true },
-      "teams": {
-        "home": { "id": 532, "name": "Valencia", "logo": "", "winner": false },
-        "away": { "id": 536, "name": "Sevilla", "logo": "", "winner": true }
+        "home": { "id": 541, "name": "Real Madrid", "logo": "https://media.api-sports.io/football/teams/530.png", "winner": false },
+        "away": { "id": 529, "name": "Barcelona", "logo": "https://media.api-sports.io/football/teams/529.png", "winner": true }
       },
       "goals": { "home": 1, "away": 2 },
       "score": {
@@ -93,24 +69,66 @@
     },
     {
       "fixture": {
-        "id": 2004,
-        "referee": "Del Cerro Grande",
+        "id": 2003,
+        "referee": "Antonio Mateu Lahoz",
         "timezone": "Europe/Madrid",
-        "date": "2024-08-25T20:00:00+00:00",
-        "timestamp": 1724616000,
-        "periods": { "first": 1724616000, "second": 1724619600 },
-        "venue": { "id": 20134, "name": "Benito Villamarín", "city": "Sevilla" },
-        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90, "extra": null }
+        "date": "2024-03-03T21:00:00+01:00",
+        "timestamp": 1709449200,
+        "periods": { "first": 1709449200, "second": 1709452800 },
+        "venue": { "id": 3, "name": "Camp de Mestalla", "city": "Valencia" },
+        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
-      "league": { "id": 140, "name": "La Liga", "country": "Spain", "logo": "", "flag": "", "season": 2024, "round": "Regular Season - 2", "standings": true },
+      "league": {
+        "id": 100,
+        "name": "La Liga",
+        "country": "Spain",
+        "logo": "https://media.api-sports.io/football/leagues/100.png",
+        "flag": "https://media.api-sports.io/flags/es.svg",
+        "season": 2024,
+        "round": "Matchday 25",
+        "standings": true
+      },
       "teams": {
-        "home": { "id": 543, "name": "Real Betis", "logo": "", "winner": true },
-        "away": { "id": 548, "name": "Real Sociedad", "logo": "", "winner": false }
+        "home": { "id": 532, "name": "Valencia", "logo": "https://media.api-sports.io/football/teams/532.png", "winner": false },
+        "away": { "id": 536, "name": "Sevilla", "logo": "https://media.api-sports.io/football/teams/533.png", "winner": true }
       },
-      "goals": { "home": 2, "away": 0 },
+      "goals": { "home": 1, "away": 2 },
       "score": {
-        "halftime": { "home": 1, "away": 0 },
-        "fulltime": { "home": 2, "away": 0 },
+        "halftime": { "home": 0, "away": 1 },
+        "fulltime": { "home": 1, "away": 2 },
+        "extratime": { "home": null, "away": null },
+        "penalty": { "home": null, "away": null }
+      }
+    },
+    {
+      "fixture": {
+        "id": 2004,
+        "referee": "Antonio Mateu Lahoz",
+        "timezone": "Europe/Madrid",
+        "date": "2024-03-04T19:00:00+01:00",
+        "timestamp": 1709535600,
+        "periods": { "first": 1709535600, "second": 1709539200 },
+        "venue": { "id": 4, "name": "RCDE Stadium", "city": "Barcelona" },
+        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
+      },
+      "league": {
+        "id": 100,
+        "name": "La Liga",
+        "country": "Spain",
+        "logo": "https://media.api-sports.io/football/leagues/100.png",
+        "flag": "https://media.api-sports.io/flags/es.svg",
+        "season": 2024,
+        "round": "Matchday 26",
+        "standings": true
+      },
+      "teams": {
+        "home": { "id": 534, "name": "Espanyol", "logo": "https://media.api-sports.io/football/teams/534.png", "winner": false },
+        "away": { "id": 529, "name": "Barcelona", "logo": "https://media.api-sports.io/football/teams/529.png", "winner": true }
+      },
+      "goals": { "home": 0, "away": 3 },
+      "score": {
+        "halftime": { "home": 0, "away": 2 },
+        "fulltime": { "home": 0, "away": 3 },
         "extratime": { "home": null, "away": null },
         "penalty": { "home": null, "away": null }
       }
@@ -118,23 +136,32 @@
     {
       "fixture": {
         "id": 2005,
-        "referee": "Gil Manzano",
+        "referee": "Antonio Mateu Lahoz",
         "timezone": "Europe/Madrid",
-        "date": "2024-08-31T18:30:00+00:00",
-        "timestamp": 1725129000,
-        "periods": { "first": 1725129000, "second": 1725132600 },
-        "venue": { "id": 20136, "name": "Estadi Montilivi", "city": "Girona" },
-        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90, "extra": null }
+        "date": "2024-03-05T20:30:00+01:00",
+        "timestamp": 1709631000,
+        "periods": { "first": 1709631000, "second": 1709634600 },
+        "venue": { "id": 5, "name": "San Mamés", "city": "Bilbao" },
+        "status": { "long": "Match Finished", "short": "FT", "elapsed": 90 }
       },
-      "league": { "id": 140, "name": "La Liga", "country": "Spain", "logo": "", "flag": "", "season": 2024, "round": "Regular Season - 3", "standings": true },
+      "league": {
+        "id": 100,
+        "name": "La Liga",
+        "country": "Spain",
+        "logo": "https://media.api-sports.io/football/leagues/100.png",
+        "flag": "https://media.api-sports.io/flags/es.svg",
+        "season": 2024,
+        "round": "Matchday 26",
+        "standings": true
+      },
       "teams": {
-        "home": { "id": 797, "name": "Girona", "logo": "", "winner": true },
-        "away": { "id": 546, "name": "Getafe", "logo": "", "winner": false }
+        "home": { "id": 535, "name": "Athletic Club", "logo": "https://media.api-sports.io/football/teams/535.png", "winner": false },
+        "away": { "id": 548, "name": "Real Sociedad", "logo": "https://media.api-sports.io/football/teams/536.png", "winner": true }
       },
-      "goals": { "home": 3, "away": 1 },
+      "goals": { "home": 1, "away": 2 },
       "score": {
         "halftime": { "home": 1, "away": 1 },
-        "fulltime": { "home": 3, "away": 1 },
+        "fulltime": { "home": 1, "away": 2 },
         "extratime": { "home": null, "away": null },
         "penalty": { "home": null, "away": null }
       }
