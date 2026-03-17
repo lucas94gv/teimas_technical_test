@@ -73,7 +73,7 @@ group :development, :test do
   # It provides a suite of tools and helpers for writing and running unit, integration, and
   # system tests, allowing for a behavior-driven development (BDD) approach to testing and ensuring robust and
   # maintainable code.
-  gem "rspec-rails", "~> 8.0", ">= 8.0.3"
+  gem "rspec-rails", "~> 8.0"
 
   # FactoryBot is a fixtures replacement tool that allows you to create test data more easily and flexibly.
   # The 'factory_bot_rails' gem integrates FactoryBot with Rails, enabling you to define and
