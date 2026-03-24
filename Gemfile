@@ -42,7 +42,7 @@ gem 'fast_jsonapi', '~> 1.5'
 gem 'faraday', '~> 2.14', '>= 2.14.1'
 
 group :test do
-  gem 'webmock', '~> 3.26', '>= 3.26.1'
+  gem 'webmock', '~> 3.26'
 end
 
 group :development do
